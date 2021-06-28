@@ -1,0 +1,46 @@
+{
+    "particles": {
+"number":{
+    "value":400
+},
+"color":{
+    "value": "#ff6224"
+},
+    "opacity": {
+"anim":{
+    "enable":true,
+    "speed": 0.5
+    }
+},
+"size":{
+    "value": 5,
+    "anim": {
+        "enable":true,
+        "speed":15
+    }
+
+},
+"line_linked":{
+    "enable": true,
+    "distance": 100,
+    "color" : "#ff8859",
+    "width": 1
+}
+
+
+
+
+
+},
+"interactivity":{
+    "events":{
+        "onhover":{
+            "enable":true,
+            "mode":"grab"
+        }
+    }
+   
+}
+
+
+}

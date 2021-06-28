@@ -1,0 +1,22 @@
+body {
+  background: burlywood;
+  font-family: "Bebas Neue", cursive;
+}
+#particles-js {
+  border: 2px solid coral;
+  background: burlywood;
+  height: 400px;
+}
+
+#headerContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 17vh;
+  margin-left: 18rem;
+  background-color: coral;
+
+  width: 250px;
+}
