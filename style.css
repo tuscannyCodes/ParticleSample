@@ -18,3 +18,10 @@ body {
 
   width: 250px;
 }
+
+#mainParagraph {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 20px;
+  z-index: 2;
+}
