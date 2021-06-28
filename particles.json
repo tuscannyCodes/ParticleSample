@@ -16,7 +16,7 @@
     "value": 5,
     "anim": {
         "enable":true,
-        "speed":15
+        "speed": 10
     }
 
 },
