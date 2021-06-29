@@ -4,7 +4,7 @@
     "value":400
 },
 "color":{
-    "value": "#cf7200"
+    "value": "#fff"
 },
     "opacity": {
 "anim":{
@@ -23,7 +23,7 @@
 "line_linked":{
     "enable": true,
     "distance": 100,
-    "color" : "#ff8859",
+    "color" : "#fff",
     "width": 1
 }
 
