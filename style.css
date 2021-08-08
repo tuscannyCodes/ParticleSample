@@ -1,3 +1,9 @@
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background: burlywood;
   font-family: "Bebas Neue", cursive;
@@ -6,6 +12,7 @@ body {
   border: 2px solid coral;
   background: burlywood;
   height: 400px;
+  width: 100%;
 }
 
 #headerContainer {
@@ -35,4 +42,45 @@ body {
   width: 190px;
   margin-top: -15px;
   margin-left: 0px;
+}
+
+section {
+  align-items: center;
+  position: relative;
+  display: flex;
+  width: 900vw;
+  height: 10vh;
+}
+
+section {
+  position: absolute;
+  overflow: hidden;
+  --offset: 40vw;
+  move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  width: 200%;
+}
+
+span {
+  font-size: 4em;
+  padding: 0.5vw;
+}
+
+#mainContainer {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  animation: marquee 5s linear infinite;
+  background-color: red;
+  width: 200vw;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
 }
