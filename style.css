@@ -8,9 +8,61 @@ body {
   background: burlywood;
   font-family: "Bebas Neue", cursive;
 }
+
+#grainTexture::after {
+  font-family: "Bebas Neue", cursive;
+  background-image: url("testGrain.png");
+
+  animation: grain 8s steps(10) infinite;
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.2;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+
+  70% {
+    transform: translate(5%, 0%);
+  }
+
+  80% {
+    transform: translate(15%, 0%);
+  }
+
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
 #particles-js {
   border: 2px solid coral;
-  background: burlywood;
+
   height: 400px;
   width: 100%;
 }
@@ -73,6 +125,7 @@ span {
   animation: marquee 5s linear infinite;
   background-color: red;
   width: 200vw;
+  z-index: 1;
 }
 
 @keyframes marquee {
